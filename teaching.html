@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Teaching - Dr. Your Name</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap');
+
+    :root {
+      --main-color: #556b2f;
+      --light-bg: #f9f9f9;
+      --text-color: #333;
+    }
+
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      background-color: var(--light-bg);
+      color: var(--text-color);
+    }
+
+    header {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 5rem 2rem;
+      background-color: var(--main-color);
+      color: white;
+      position: relative;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.2rem;
+      text-align: center;
+      flex: 1;
+    }
+
+    .profile-pic {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid white;
+      position: absolute;
+      right: 2rem;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    nav {
+      background-color: white;
+      display: flex;
+      justify-content: center;
+      padding: 0.5rem;
+      border-bottom: 1px solid #ddd;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: var(--main-color);
+      margin: 0 1rem;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+
+    section {
+      margin-bottom: 3rem;
+    }
+
+    h2 {
+      border-bottom: 3px solid var(--main-color);
+      padding-bottom: 0.3rem;
+      color: var(--main-color);
+    }
+
+    .entry {
+      background: white;
+      border-left: 5px solid var(--main-color);
+      padding: 0.5rem 1rem;
+      margin: 0.5rem 0;
+      border-radius: 6px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+
+    .entry h3 {
+      margin-top: 0;
+      margin-bottom: 0.1rem; /* reduce space below title */
+    }
+    .entry p {
+    margin-top: 0.1rem; /* reduce space above the description */
+    }
+
+    .year {
+      font-weight: bold;
+      color: #777;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Mouna Gharbi</h1>
+    <img src="IMG_7401-zoom1.JPEG" alt="Your profile photo" class="profile-pic" />
+  </header>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="cv.html">CV</a>
+    <a href="teaching.html">Teaching</a>
+    <a href="publications.html">Publications</a>
+  </nav>
+  <main>
+    <section>
+      <h2>Teaching</h2>
+
+      <div class="entry">
+        <div class="year">2025 (summer semester)</div>
+        <h3>Mathematical Image processing</h3>
+        <p>Masters-level exercise class, Department of Mathematics and Scientific Computing, University of Graz.</p>
+      </div>
+
+      <div class="entry">
+        <div class="year">2025 (summer semester)</div>
+        <h3>Calculus of Variations</h3>
+        <p>Masters-level exercise class, Department of of Mathematics and Scientific Computing, University of Graz.</p>
+      </div>
+
+      <div class="entry">
+        <div class="year">2025 (summer semester)</div>
+        <h3>Linear Algebra and Analytic Geometry</h3>
+        <p>Bachelor level exercise class , Department of of Mathematics and Scientific Computing, University of Graz.</p>
+      </div>
+      <div class="entry">
+        <div class="year">2023 (Winter semester)</div>
+        <h3>Optimization</h3>
+        <p>Bachelor level exercise class , CentralesSupelec, University Paris-Saclay</p>
+      </div>
+
+    </section>
+
+    <section>
+      <h2>Supervision</h2>
+
+      <div class="entry">
+        <div class="year">2022</div>
+        <h3>Mass Spectrometry Reconstruction using Deep learning</h3>
+        <p>Bachelor’s thesis on Deep learning for mass spectrometry data restoration.</p>
+      </div>
+
+     
+    </section>
+  </main>
+  <footer>
+    &copy; 2025 Dr. Mouna Gharbi
+  </footer>
+</body>
+</html>

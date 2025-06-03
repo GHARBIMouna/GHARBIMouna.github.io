@@ -1,16 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>HTML5 Boilerplate</title>
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dr. Your Name</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap');
+
+    :root {
+      --main-color: #556b2f; /* olive green */
+      --light-bg: #f9f9f9;
+      --text-color: #333;
+    }
+
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      background-color: var(--light-bg);
+      color: var(--text-color);
+    }
+
+    header {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 5rem 2rem; /* increased height */
+      background-color: var(--main-color);
+      color: white;
+      position: relative;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.2rem;
+      text-align: center;
+      flex: 1;
+    }
+
+    .profile-pic {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid white;
+      position: absolute;
+      right: 2rem;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    nav {
+      background-color: white;
+      display: flex;
+      justify-content: center;
+      padding: 0.5rem;
+      border-bottom: 1px solid #ddd;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: var(--main-color);
+      margin: 0 1rem;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      display: flex;
+      justify-content: space-between;
+      max-width: 1000px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+
+    .welcome-box {
+      flex: 2;
+      background: white;
+      padding: 1.5rem;
+      margin-right: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    }
+
+    .contact-box {
+      flex: 1;
+      background: white;
+      padding: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      color: #777;
+    }
+  </style>
 </head>
-
 <body>
-  <h1>Page Title</h1>
-  <img src="monalisa.jpeg">
-</body>
+  <header>
+    <h1>Mouna Gharbi</h1>
+    <img src="IMG_7401-zoom1.JPEG" alt="Your profile photo" class="profile-pic" />
+  </header>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="cv.html">CV</a>
+    <a href="teaching.html">Teaching</a>
+    <a href="publications.html">Publications</a>
+  </nav>
+  <main>
+    <div class="welcome-box">
+      <h2>Welcome!</h2>
+      <p>
+        I am a postdoctoral researcher currently employed at University of Graz in Austria. I am part of the Department of Mathematics and scientific computing, working in the research group Inverse problems and Mathematical Imaging.
+        
+        In terms of research I am primarily interested in the intersection of model-based approaches and data-driven methods to develop  mathematically sound, robust, convergent, efficient models to solve inverse problems. I am also eager to ensure the scalability and applicability of devised approaches to solve real-world problems. 
+        My research interests involve and are not restricted to: 
+      <ul>
+  <li><strong>Monotone operator theory and convex optimization</strong> – I study variational and operator-theoretic methods for solving inverse problems in imaging, with applications ranging from chemical spectroscopy to medical imaging.</li>
+  <li><strong>Unrolling optimization algorithms</strong> – During my PhD, I investigated unrolled variants of classical iterative schemes, including half-quadratic majorization-minimization, primal-dual methods, and iterative soft-thresholding.</li>
+  <li><strong>Plug-and-play regularization</strong> – My current postdoctoral work focuses on plug-and-play regularization, exploring the integration of learned and model-based priors.</li>
+  <li><strong>Deep equilibrium models and implicit networks</strong> – I am increasingly interested in implicit models for inverse problems, particularly in bridging optimization algorithms and deep learning through equilibrium formulations.</li>
+</ul>
 
+      </p>
+    </div>
+    <div class="contact-box">
+      <h3>Contact Information</h3>
+      <p>
+        Dr. Mouna Gharbi <br>
+        Institute of Mathematics and Scientific Computing <br>
+        University of Graz <br>
+        Heinrichstraße 36 <br>
+        8010 Graz, Austria <br>
+        mouna.gharbi@unigraz.at<br>
+        +43 (0)316 380 - 5169<br>
+      </p>
+    </div>
+  </main>
+  <footer>
+    &copy; 2025 Dr. Mouna Gharbi
+  </footer>
+</body>
 </html>
